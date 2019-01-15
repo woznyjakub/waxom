@@ -1,0 +1,28 @@
+@import "reset";
+@import "libs";
+@import "variables";
+@import "mixins";
+@import "components";
+
+* {
+  box-sizing: border-box;
+}
+img {
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+.main-container {
+  max-width: 1920px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+@import "./layout/header";
+@import "./layout/nav";
+@import "./layout/about";
+@import "./layout/projects";
+@import "./layout/presentation";
+@import "./layout/blog";
+@import "./layout/footer";

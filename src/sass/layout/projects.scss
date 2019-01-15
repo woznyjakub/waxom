@@ -1,0 +1,102 @@
+.project__categories {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  .btn {
+    margin: 0.125rem 0.25rem;
+  }
+}
+.projects__list {
+  font-size: 14px;
+}
+.projects__project {
+  margin: 0.5rem 0;
+  background-color: $brown6;
+  transition: 0.3s;
+  cursor: pointer;
+  &:nth-last-child(1),
+  &:nth-last-child(2),
+  &:nth-last-child(3) {
+    display: none;
+  }
+}
+.projects__project-image-wrapper {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 1rem;
+    bottom: 0;
+    border-bottom: 1rem solid $brown6;
+    border-left: 1rem solid transparent;
+    border-right-width: 1rem;
+    border-right-style: solid;
+    border-right-color: transparent;
+    // ￼border-right: 1rem solid transparent; // Webpack throws an error when it's in use. I don't know why.
+    transition: 0.3s;
+  }
+}
+.projects__project-image {
+  width: 100%;
+}
+.projects__magnifier-icon {
+  width: 2rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.projects__project-text-wrapper {
+  padding: 1rem 0.5rem;
+  .heading,
+  .para {
+    transition: 0.3s;
+    text-align: left;
+  }
+  .heading {
+    color: $brown3;
+    font-weight: 400;
+  }
+  .para {
+    padding: 0;
+  }
+}
+.projects__btn-load-more {
+  margin-top: 1rem;
+}
+@media ($bp-landscape) {
+  .projects__list {
+    justify-content: space-between;
+  }
+  .projects__project {
+    flex-basis: 49%;
+  }
+}
+@media ($bp-tablet) {
+  .projects__project {
+    flex-basis: 33%;
+  }
+}
+@media ($bp-desktop-small) {
+  .projects__project:hover {
+    background-color: $brown0;
+    .projects__project-image-wrapper::after {
+      border-bottom-color: $brown0;
+    }
+    .heading {
+      color: $white;
+    }
+    .para {
+      color: $brown3;
+    }
+  }
+}
+@media ($bp-desktop-large) {
+  .projects__project {
+    margin: 1rem 0;
+  }
+  .projects__project-text-wrapper {
+    padding: 2rem;
+  }
+}

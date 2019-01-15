@@ -1,0 +1,161 @@
+.presentation__video {
+  position: relative;
+  overflow: hidden;
+}
+.presentation__intro,
+.presentation__video iframe {
+  min-height: 400px;
+  width: 100%;
+  display: block;
+}
+.presentation__intro {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url("../img/desk.jpg") 50% 50% / cover;
+  transition: top 0.6s ease-in-out;
+  &,
+  .container {
+    height: 100%;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  svg {
+    width: 5rem;
+    height: 5rem;
+    cursor: pointer;
+    path.ring {
+      transition: 0.2s ease-out;
+      transform-origin: 50% 50%;
+    }
+  }
+  * {
+    color: $white;
+  }
+  &.hidden {
+    top: 100%;
+  }
+}
+.presentation__mobile {
+  display: none;
+}
+.presentation__bg-container {
+  background-image: $brown-gradient;
+}
+.presentation__counters {
+  display: flex;
+  flex-wrap: wrap;
+  @include create-centered-container(1024px);
+}
+.presentation__counter {
+  flex-basis: 100%;
+  padding: 0.25rem 0;
+  img {
+    width: 4rem;
+    height: 4rem;
+    margin: 0 auto;
+  }
+  img,
+  .para {
+    padding: 0.25rem;
+  }
+}
+.presentation__counter-elems-wrapper {
+  display: flex;
+  justify-content: space-between;
+  @include create-centered-container(300px);
+}
+.presentation__counter-number {
+  font-size: 2.5em;
+  color: $white;
+}
+.presentation__counter-description {
+  text-transform: uppercase;
+  padding: 1.5rem 0;
+}
+@media ($bp-landscape) {
+  .presentation__intro,
+  .presentation__video iframe {
+    min-height: calc(100vw * 0.367);
+  }
+  .presentation__counters {
+    justify-content: center;
+  }
+  .presentation__counter {
+    flex-basis: 50%;
+  }
+}
+@media ($bp-desktop-small) {
+  .presentation__intro svg:hover .ring {
+    transform: rotate(90deg);
+  }
+  .presentation__mobile {
+    display: block;
+  }
+  .presentation__mobile-wrapper {
+    display: flex;
+  }
+  .presentation__image-wrapper {
+    flex-basis: 40%;
+    img {
+      width: 75%;
+      margin: 0 auto;
+    }
+  }
+  .presentation__mobile-text-wrapper {
+    flex-basis: 60%;
+    font-size: 14px;
+    * {
+      text-align: left;
+    }
+    .para {
+      margin: 0;
+    }
+    p.para {
+      padding: 1rem 0;
+    }
+  }
+  .presentation__features {
+    list-style-type: none;
+    padding: 1rem 0;
+  }
+  .presentation__feature {
+    padding: 0.5rem 0 0.5rem 2.5rem;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background: 50% 50% / 0.625rem 0.625rem no-repeat;
+      background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDIzOC4wMDMgMjM4LjAwMyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjM4LjAwMyAyMzguMDAzOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMTgxLjc3NiwxMDcuNzE5TDc4LjcwNSw0LjY0OGMtNi4xOTgtNi4xOTgtMTYuMjczLTYuMTk4LTIyLjQ3LDBzLTYuMTk4LDE2LjI3MywwLDIyLjQ3ICAgIGw5MS44ODMsOTEuODgzbC05MS44ODMsOTEuODgzYy02LjE5OCw2LjE5OC02LjE5OCwxNi4yNzMsMCwyMi40N3MxNi4yNzMsNi4xOTgsMjIuNDcsMGwxMDMuMDcxLTEwMy4wMzkgICAgYzMuMTQ2LTMuMTQ2LDQuNjcyLTcuMjQ2LDQuNjQtMTEuMjgzQzE4Ni40MTYsMTE0LjkwMiwxODQuODksMTEwLjgzMywxODEuNzc2LDEwNy43MTl6IiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==);
+      @include create-circle(1.25rem, $brown3);
+    }
+  }
+}
+@media ($bp-tablet) {
+  .presentation__counter {
+    flex-basis: 20%;
+    padding-bottom: 2rem;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+      @include create-rectangle(32px, 2px, $white);
+    }
+  }
+  .presentation__counter-elems-wrapper {
+    flex-direction: column;
+  }
+  .presentation__counter-description {
+    font-size: 0.75em;
+  }
+}

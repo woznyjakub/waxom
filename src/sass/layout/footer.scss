@@ -1,0 +1,33 @@
+.footer {
+  background-color: #111;
+  font-size: 14px;
+}
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.footer__item {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  p {
+    margin: 0;
+  }
+}
+@media ($bp-landscape) {
+  .footer__item p {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+}
+@media ($bp-desktop-small) {
+  .footer__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer__item {
+    p:not(:last-of-type) {
+      border-right: 1px solid $grey1;
+    }
+  }
+}

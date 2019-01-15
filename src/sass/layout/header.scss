@@ -1,0 +1,159 @@
+.header {
+  position: relative;
+}
+.header__slide {
+  min-height: 100vh;
+  background: 50% 50% / cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem 1rem 2rem;
+  & > * {
+    color: $white;
+  }
+}
+// It's caused by clones elements created by glidejs slider library
+.header__slide[data-id="1"] {
+  background-image: url("../img/mountain.jpg");
+}
+.header__slide[data-id="2"] {
+  background-image: url("../img/city.jpg");
+}
+.header__slide[data-id="3"] {
+  background-image: url("../img/car.jpg");
+}
+.header__slide[data-id="4"] {
+  background-image: url("../img/camera.jpg");
+}
+
+.header__heading-small {
+  font-size: 1.5em;
+  font-family: "raleway", sans-serif;
+  line-height: 1em;
+}
+.header__heading {
+  margin-top: 0.25rem;
+  font-size: 1.75em;
+  font-family: "raleway", sans-serif;
+  font-weight: 800;
+  line-height: 1em;
+}
+.header__para {
+  font-weight: 700;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.header__btn-start {
+  margin-top: 2rem;
+}
+.header__arrow {
+  display: none;
+}
+@media ($bp-tablet) {
+  .header__heading-small {
+    font-size: 2.25em;
+  }
+  .header__heading {
+    font-size: 3em;
+  }
+}
+@media ($bp-desktop-small) {
+  .header__btn-start:hover {
+    background-color: $white;
+    color: $brown1;
+    box-shadow: 0 0 20px 0 $white !important;
+    border-bottom-color: $white;
+  }
+}
+@media ($bp-desktop-large) {
+  .header__arrow {
+    display: block;
+    line-height: 106px;
+    font-family: "raleway", sans-serif;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+
+    & > p {
+      font-weight: 800;
+      font-size: 2em;
+      transition: padding 0.3s, opacity 0.15s ease-out;
+      opacity: 0;
+      color: $brown6;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: $grey3;
+      width: 56px;
+      height: 5px;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: 0.3s;
+      border-radius: 2px;
+    }
+
+    &--left {
+      left: 8%;
+      &::before,
+      &::after {
+        left: 5px;
+      }
+      &::before {
+        left: 5px;
+        transform-origin: left bottom;
+        transform: translateY(-50%) rotate(-45deg);
+      }
+      &::after {
+        left: 5px;
+        transform-origin: left top;
+        transform: translateY(-50%) rotate(45deg);
+      }
+    }
+
+    &--right {
+      right: 8%;
+      &::before,
+      &::after {
+        right: 5px;
+      }
+      &::before {
+        transform-origin: right bottom;
+        transform: translateY(-50%) rotate(45deg);
+      }
+      &::after {
+        transform-origin: right top;
+        transform: translateY(-50%) rotate(-45deg);
+      }
+    }
+  }
+  .header__arrow--left:hover {
+    & > p {
+      padding-left: 3rem;
+      opacity: 1;
+    }
+    &::before {
+      transform: translateY(-50%) rotate(-60deg);
+    }
+    &::after {
+      transform: translateY(-50%) rotate(60deg);
+    }
+  }
+  .header__arrow--right:hover {
+    & > p {
+      padding-right: 3rem;
+      opacity: 1;
+    }
+    &::before {
+      transform: translateY(-50%) rotate(60deg);
+    }
+    &::after {
+      transform: translateY(-50%) rotate(-60deg);
+    }
+  }
+}

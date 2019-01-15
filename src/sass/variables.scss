@@ -1,0 +1,30 @@
+/* breakpoints */
+$bp-landscape: "min-width: 480px";
+$bp-tablet: "min-width: 768px";
+$bp-desktop-small: "min-width: 900px";
+$bp-desktop-large: "min-width: 1200px";
+
+/* colors - 0 means the darkest one */
+$black: #000;
+$grey0: #252525;
+$grey1: #363636;
+$grey2: #555;
+$grey3: #8c8c8c;
+$grey4: #acacac;
+$grey5: #d1d1d1;
+$white: #fff;
+
+$brown0: #362f2d;
+$brown1: #998675;
+$brown2: #a48d72;
+$brown3: #c7b299;
+$brown4: #d3c1ad;
+$brown5: #f1eee9;
+$brown6: #fbfaf8;
+
+$blue: #00bff3;
+
+/* other */
+$brown-gradient: linear-gradient(90deg, #211b19 0%, #4e3427 100%);
+$scale-x-timing-function: cubic-bezier(0.6, 0.05, 0.01, 0.99);
+$scale-y-timing-function: cubic-bezier(0.35, 0, 0, 1);

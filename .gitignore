@@ -1,0 +1,8 @@
+# node modules
+node_modules/
+
+# dist
+dist/
+
+#v8
+v8-compile-cache-0/

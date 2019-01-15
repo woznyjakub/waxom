@@ -1,0 +1,18 @@
+@mixin create-centered-container($max-width) {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@mixin create-rectangle($width, $height, $bgc) {
+  width: $width;
+  height: $height;
+  background-color: $bgc;
+}
+
+@mixin create-circle($diameter, $bgc) {
+  width: $diameter;
+  height: $diameter;
+  border-radius: 50%;
+  background-color: $bgc;
+}
