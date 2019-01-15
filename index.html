@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Waxom</title>
+  <link href="app.css" rel="stylesheet"></head>
+  <body>
+    <div class="main-container">
+      <nav class="nav">
+        <div class="nav__wrapper container">
+          <img
+            class="nav__logo nav__logo--white"
+            src="img/logo-white.png"
+            alt="white waxom logo"
+          />
+          <img
+            class="nav__logo nav__logo--dark"
+            src="img/logo-dark.png"
+            alt="dark waxom logo"
+          />
+          <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <ul class="nav__list">
+            <li class="nav__list-item"><a data-scroll-to="header">Home</a></li>
+            <li class="nav__list-item"><a data-scroll-to="about">About Us</a></li>
+            <li class="nav__list-item"><a data-scroll-to="projects">Portfolio</a></li>
+            <li class="nav__list-item"><a data-scroll-to="presentation">Features</a></li>
+            <li class="nav__list-item"><a data-scroll-to="blog">Blog</a></li>
+            <li class="nav__list-item"><a data-scroll-to="footer">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <header class="header">
+        <div class="glide header__slider">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide header__slide" data-id="1">
+                <h2 class="header__heading-small">Unique and modern design</h2>
+                <h1 class="header__heading">Portfolio PSD template</h1>
+                <p class="para header__para">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                  unde libero illo non ipsam incidunt obcaecati facilis delectus
+                  quibusdam deleniti! Velit, assumenda earum.
+                </p>
+                <button class="btn header__btn-start" data-scroll-to="about">Get started</button>
+              </li>
+              <li class="glide__slide header__slide" data-id="2">
+                <h2 class="header__heading-small">Fully responsive design</h2>
+                <h1 class="header__heading">Excellent for Mobile Devices</h1>
+                <p class="para header__para">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Officia incidunt, ipsam nam quisquam similique vel cum fuga
+                  necessitatibus, recusandae tempore eligendi accusamus! Rem.
+                </p>
+                <button class="btn header__btn-start" data-scroll-to="presentation">Learn more</button>
+              </li>
+              <li class="glide__slide header__slide" data-id="3">
+                <h2 class="header__heading-small">Quam numatus farum</h2>
+                <h1 class="header__heading">See our projects!</h1>
+                <p class="para header__para">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+                  quis fugit, vitae repudiandae vel illo quaerat sit harum
+                  incidunt veniam velit obcaecati sint.
+                </p>
+                <button class="btn header__btn-start"  data-scroll-to="projects">Learn more</button>
+              </li>
+              <li class="glide__slide header__slide" data-id="4">
+                <h2 class="header__heading-small">Interested?</h2>
+                <h1 class="header__heading">Contact us!</h1>
+                <p class="para header__para">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Optio corporis a necessitatibus, neque aut obcaecati beatae,
+                  magnam, veritatis ullam asperiores esse! Voluptatibus, harum?
+                </p>
+                <button class="btn header__btn-start" data-scroll-to="footer">Learn more</button>
+              </li>
+            </ul>
+          </div>
+          <div class="glide__arrows" data-glide-el="controls">
+            <div
+              class="header__arrow header__arrow--left glide__arrow"
+              data-glide-dir="<"
+            >
+              <p>Previous</p>
+            </div>
+            <div
+              class="header__arrow header__arrow--right glide__arrow"
+              data-glide-dir=">"
+            >
+              <p>Next</p>
+            </div>
+          </div>
+          <div class="glide__bullets" data-glide-el="controls[nav]">
+            <button class="glide__bullet" data-glide-dir="=0"></button>
+            <button class="glide__bullet" data-glide-dir="=1"></button>
+            <button class="glide__bullet" data-glide-dir="=2"></button>
+            <button class="glide__bullet" data-glide-dir="=3"></button>
+          </div>
+        </div>
+      </header>
+      <section class="about">
+        <div class="container">
+          <div class="about__features flex-list padding-responsive--y">
+            <div class="about__feature">
+              <img
+                src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA0OTQuNDY1IDQ5NC40NjUiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQ5NC40NjUgNDk0LjQ2NTsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI1MTJweCIgaGVpZ2h0PSI1MTJweCI+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTQ4OS42NjUsMTI2LjQzMmwtMTIxLjYtMTIxLjZjLTYuNC02LjQtMTYtNi40LTIyLjQsMGwtMjQwLDI0MGMtNi40LDYuNC02LjQsMTYsMCwyMi40YzYuNCw2LjQsMTYsNi40LDIyLjQsMCAgICBsMjMwLjQtMjMwLjRsOTkuMiw5OS4ybC0yMzAuNCwyMzAuNGMtNi40LDYuNC02LjQsMTYsMCwyMi40YzMuMiwzLjIsNi40LDQuOCwxMS4yLDQuOGM0LjgsMCw4LTEuNiwxMS4yLTQuOGwyNDAtMjQwICAgIEM0OTYuMDY1LDE0Mi40MzIsNDk2LjA2NSwxMzIuODMyLDQ4OS42NjUsMTI2LjQzMnoiIGZpbGw9IiM1NTU1NTUiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik0yNTIuODY1LDM3MS4yMzJjLTMuMi04LTEyLjgtMTEuMi0yMC44LThsLTE4NCw4My4ybDgzLjItMTg0YzMuMi04LDAtMTcuNi04LTIwLjhzLTE3LjYsMC0yMC44LDhsLTEwMC44LDIyMi40ICAgIGMtMy4yLDYuNC0xLjYsMTIuOCwzLjIsMTcuNmMzLjIsMy4yLDYuNCw0LjgsMTEuMiw0LjhjMS42LDAsNC44LDAsNi40LTEuNmwyMjIuNC0xMDAuOCAgICBDMjUyLjg2NSwzODguODMyLDI1Ni4wNjUsMzc5LjIzMiwyNTIuODY1LDM3MS4yMzJ6IiBmaWxsPSIjNTU1NTU1Ii8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMjA5LjY2NSwyODQuODMyYy04LTgtMjAuOC0xMi44LTMyLTEyLjhjLTEyLjgsMC0yNCw0LjgtMzIsMTIuOGMtNi40LDYuNC02LjQsMTYsMCwyMi40YzYuNCw2LjQsMTYsNi40LDIyLjQsMCAgICBjMy4yLTEuNiw2LjQtMy4yLDkuNi0zLjJjMy4yLDAsNi40LDAsOS42LDMuMmMxLjYsMy4yLDMuMiw2LjQsMy4yLDkuNnMwLDYuNC0zLjIsOS42Yy02LjQsNi40LTYuNCwxNiwwLDIyLjQgICAgYzMuMiwzLjIsNi40LDQuOCwxMS4yLDQuOGMzLjIsMCw4LTEuNiwxMS4yLTQuOGM4LTgsMTIuOC0xOS4yLDEyLjgtMzJTMjE3LjY2NSwyOTIuODMyLDIwOS42NjUsMjg0LjgzMnoiIGZpbGw9IiM1NTU1NTUiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik0xNjkuNjY1LDI0NC44MzJjLTE3LjYtMTcuNi00Ni40LTE3LjYtNjQsMGMtNi40LDYuNC02LjQsMTYsMCwyMi40YzYuNCw2LjQsMTYsNi40LDIyLjQsMGM0LjgtNC44LDEyLjgtNC44LDE3LjYsMCAgICBjNC44LDQuOCw0LjgsMTIuOCwwLDE3LjZjLTYuNCw2LjQtNi40LDE2LDAsMjIuNGMzLjIsMy4yLDYuNCw0LjgsMTEuMiw0LjhjNC44LDAsOC0xLjYsMTIuOC0zLjIgICAgQzE4Ny4yNjUsMjkxLjIzMiwxODcuMjY1LDI2Mi40MzIsMTY5LjY2NSwyNDQuODMyeiIgZmlsbD0iIzU1NTU1NSIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTI0OS42NjUsMzI2LjQzMmMtOC04LTIwLjgtMTIuOC0zMi0xMi44Yy0xMi44LDAtMjQsNC44LTMyLDEyLjhjLTYuNCw2LjQtNi40LDE2LDAsMjIuNGM2LjQsNi40LDE2LDYuNCwyMi40LDAgICAgYzMuMi0xLjYsNi40LTMuMiw5LjYtMy4yYzMuMiwwLDYuNCwwLDkuNiwzLjJjNC44LDQuOCw0LjgsMTIuOCwwLDE3LjZjLTYuNCw2LjQtNi40LDE2LDAsMjIuNGMzLjIsMy4yLDYuNCw0LjgsMTEuMiw0LjggICAgYzQuOCwwLDgtMS42LDExLjItMy4yQzI2Ny4yNjUsMzcyLjgzMiwyNjcuMjY1LDM0NC4wMzIsMjQ5LjY2NSwzMjYuNDMyeiIgZmlsbD0iIzU1NTU1NSIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTQwOS42NjUsNDQuODMyYy02LjQtNi40LTE2LTYuNC0yMi40LDBsLTIxMi44LDIxMS4yYy02LjQsNi40LTYuNCwxNiwwLDIyLjRjMy4yLDMuMiw2LjQsNC44LDExLjIsNC44ICAgIGM0LjgsMCw5LjYtMS42LDEyLjgtNC44bDIxMS4yLTIxMS4yQzQxNi4wNjUsNjAuODMyLDQxNi4wNjUsNTEuMjMyLDQwOS42NjUsNDQuODMyeiIgZmlsbD0iIzU1NTU1NSIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTQ0OS42NjUsODQuODMyYy02LjQtNi40LTE2LTYuNC0yMi40LDBsLTIxMS4yLDIxMi44Yy02LjQsNi40LTYuNCwxNiwwLDIyLjRjMy4yLDMuMiw2LjQsNC44LDExLjIsNC44czgtMS42LDExLjItNC44ICAgIGwyMTEuMi0yMTIuOEM0NTYuMDY1LDEwMC44MzIsNDU2LjA2NSw5MS4yMzIsNDQ5LjY2NSw4NC44MzJ6IiBmaWxsPSIjNTU1NTU1Ii8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMTMxLjI2NSw0MjAuODMybC01Ny42LTU3LjZjLTYuNC02LjQtMTYtNi40LTIyLjQsMGMtNi40LDYuNC02LjQsMTYsMCwyMi40bDU3LjYsNTcuNmMzLjIsMy4yLDYuNCw0LjgsMTEuMiw0LjggICAgczgtMS42LDExLjItNC44QzEzNy42NjUsNDM2LjgzMiwxMzcuNjY1LDQyNy4yMzIsMTMxLjI2NSw0MjAuODMyeiIgZmlsbD0iIzU1NTU1NSIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo="
+              />
+              <h2 class="heading heading--small">Web & App Design</h2>
+              <p class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusantium odio quibusdam quasi repudiandae, harum pariatur.
+              </p>
+            </div>
+            <div class="about__feature">
+              <img
+                src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTguMS4xLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDMyIDMyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAzMiAzMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI1MTJweCIgaGVpZ2h0PSI1MTJweCI+CjxnPgoJPGcgaWQ9ImxheWVycyI+CgkJPGc+CgkJCTxwb2x5Z29uIHBvaW50cz0iMCwyMiAxNiwyNiAzMiwyMiAzMiwyNiAxNiwzMCAwLDI2ICAgICIgZmlsbD0iIzU1NTU1NSIvPgoJCQk8cG9seWdvbiBwb2ludHM9IjAsMTQgMTYsMTggMzIsMTQgMzIsMTggMTYsMjIgMCwxOCAgICAiIGZpbGw9IiM1NTU1NTUiLz4KCQkJPHBvbHlnb24gcG9pbnRzPSIwLDYgMTYsMiAzMiw2IDMyLDEwIDE2LDE0IDAsMTAgICAgIiBmaWxsPSIjNTU1NTU1Ii8+CgkJPC9nPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo="
+              />
+              <h2 class="heading heading--small">Development</h2>
+              <p class="para">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Pariatur quo enim eos veniam? Possimus, similique?
+              </p>
+            </div>
+            <div class="about__feature">
+              <img
+                src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgODk2LjAyNSA4OTYuMDI1IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA4OTYuMDI1IDg5Ni4wMjU7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8cGF0aCBpZD0ic2V0dGluZ3NfMV8iIGQ9Ik04NjMuMjQsMzgyLjc3MWwtODguNzU5LTE0LjgwN2MtNi40NTEtMjYuMzc0LTE1Ljg1Ny01MS41ODUtMjguMTA3LTc1LjA5OWw1Ni44MjEtNzAuNDUyICAgYzEyLjA4NS0xNC44ODksMTEuNTM2LTM2LjMxMi0xLjIwNS01MC42ODJsLTM1LjMwMS0zOS43MjljLTEyLjc5Ni0xNC4zNTUtMzQuMDE2LTE3LjM5MS01MC4yMDItNy4xNjVsLTc1LjkwNiw0Ny43MTYgICBjLTMzLjM4Ni0yMy4zMjYtNzEuMjA0LTQwLjU1MS0xMTItNTAuNTQ2bC0xNC44NS04OS4yMzVjLTMuMTE2LTE4Ljg5NS0xOS40NjctMzIuNzU5LTM4LjY2MS0zMi43NTloLTUzLjE5OCAgIGMtMTkuMTU1LDAtMzUuNTYxLDEzLjg2NC0zOC42MDgsMzIuNzU5bC0xNC45MzEsODkuMjYzYy0zMy43MjksOC4yNTgtNjUuMzUzLDIxLjU4OC05NC4yMTMsMzkuMTQ0bC03Mi4xODgtNTEuNTE4ICAgYy0xNS41NTgtMTEuMTE1LTM2LjkyNy05LjM3Ny01MC41MDQsNC4xNzFsLTM3LjU4MywzNy42MWMtMTMuNTQ4LDEzLjU3Ny0xNS4yODYsMzQuOTQ2LTQuMTQyLDUwLjUwNGw1MS42MzgsNzIuMzI2ICAgYy0xNy4zOTEsMjguNjQyLTMwLjU4NCw2MC4wODYtMzguODQxLDkzLjUxNWwtODkuNzQzLDE0Ljk4NUMxMy44OTEsMzg1Ljg4OCwwLDQwMi4yNCwwLDQyMS40MzV2NTMuMTU2ICAgYzAsMTkuMTkzLDEzLjg5MSwzNS41NDcsMzIuNzU3LDM4LjY2M2w4OS43NDMsMTQuOTg1YzYuNzgxLDI3LjUwOCwxNi42MjUsNTMuNzg0LDI5LjcwOSw3OC4xNDdMOTUuNjQ3LDY3Ni40NCAgIGMtMTIuMDQ0LDE0Ljg3NS0xMS41MzgsMzYuMzEyLDEuMjAzLDUwLjY2OWwzNS4yNzQsMzkuNzNjMTIuNzk3LDE0LjM4MiwzNC4wMjgsMTcuMzYzLDUwLjIxNiw3LjE2M2w3Ny00OC4zNyAgIGMzMi41ODEsMjIuMjg1LDY5LjQ0LDM4LjY2NCwxMDguOTkzLDQ4LjM3bDE0LjkzMSw4OS4yNWMzLjA0OCwxOC44OTYsMTkuNDUzLDMyLjc2LDM4LjYwOCwzMi43Nmg1My4xOTggICBjMTkuMTk0LDAsMzUuNTQ1LTEzLjg2MywzOC42NjEtMzIuNzU5bDE0Ljg3NS04OS4yNWMzMy4zMDgtOC4xNDcsNjQuNTMxLTIxLjI0NSw5My4xMzQtMzguNWw3NS4xOTYsNTMuNzA1ICAgYzE1LjUzLDExLjE1NSwzNi45MTUsOS40MDUsNTAuNDc4LTQuMTg2bDM3LjU5OC0zNy41OTdjMTMuNTMyLTEzLjUzNiwxNS4zNjUtMzQuODkzLDQuMTI3LTUwLjQ3OWwtNTMuNTM2LTc1LjA1OSAgIGMxNy40NDEtMjguNzM4LDMwLjcwNC02MC4yMzgsMzguOTA5LTkzLjgxNmw4OC43NTgtMTQuODJjMTguOTIxLTMuMTE2LDMyLjc1Ni0xOS40NjksMzIuNzU2LTM4LjY2M3YtNTMuMTU2ICAgQzg5NS45OTgsNDAyLjI0LDg4Mi4xNjMsMzg1Ljg4OCw4NjMuMjQsMzgyLjc3MXogTTQ0OS40Miw2MTYuMDEzYy05Mi43NjQsMC0xNjgtNzUuMjUtMTY4LTE2OGMwLTkyLjc2NCw3NS4yMzYtMTY4LDE2OC0xNjggICBjOTIuNzQ4LDAsMTY3Ljk5OCw3NS4yMzYsMTY3Ljk5OCwxNjhDNjE3LjQxOCw1NDAuNzYzLDU0Mi4xNjgsNjE2LjAxMyw0NDkuNDIsNjE2LjAxM3oiIGZpbGw9IiM1NTU1NTUiLz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K"
+              />
+              <h2 class="heading heading--small">Customization</h2>
+              <p class="para">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum,
+                voluptate ratione magni est mollitia accusantium.
+              </p>
+            </div>
+            <div class="about__feature">
+              <img
+                src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUwMi42NzIgNTAyLjY3MiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTAyLjY3MiA1MDIuNjcyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij4KPGc+Cgk8Zz4KCQk8Zz4KCQkJPHBhdGggZD0iTTEzOC4yOSwxNjguMDE5aDI1OC44MDZ2LTE2LjE3OGMwLTEzLjM1Mi0xMC45MzYtMjQuMjY3LTI0LjI2Ny0yNC4yNjdIMjY2LjAxMXYtMTQuMTI5ICAgICBjMC0yMC4xMDQtMTYuMzUxLTM2LjM5LTM2LjM5LTM2LjM5aC02Mi4xMjRjLTkuNzA3LDAtMTguODMxLDMuNzk2LTI1LjczNCwxMC42OTljLTYuOTAzLDYuOTAzLTEwLjY3OCwxNS45NjItMTAuNjc4LDI1LjY5MSAgICAgdjE0LjE1SDI0LjI2N0MxMC45MTUsMTI3LjU3NCwwLDEzOC40ODgsMCwxNTEuODQxdjIxNi43MjJsODEuNTgxLTE2NS4yNzVDOTEuNDgyLDE4My4xNjEsMTE1LjksMTY4LjAxOSwxMzguMjksMTY4LjAxOXogICAgICBNMTU1LjM1MywxMTMuNDQ1YzAtMy4yMTQsMS4zMTYtNi4yNTYsMy41ODEtOC41NDJjMi4yNjUtMi4zMyw1LjMyOC0zLjYwMiw4LjU0Mi0zLjYwMmg2Mi4xMjQgICAgIGM2LjcwOSwwLDEyLjEyMyw1LjQzNiwxMi4xMjMsMTIuMTQ0djE0LjE1aC04Ni4zNjlWMTEzLjQ0NXoiIGZpbGw9IiM1NTU1NTUiLz4KCQkJPHBhdGggZD0iTTQ4Ni44NzQsMTkyLjI0M0gxMzguMjljLTEzLjMzMSwwLTI5LjA5OSw5Ljc5My0zNC45NDUsMjEuNzQzTDkuNTk5LDQwMy44OTUgICAgIGMtNS45MSwxMS45MjksMC4xOTQsMjEuNzIyLDEzLjUyNSwyMS43MjJoMzQ4LjU4NGMxMy4zMzEsMCwyOS4xMjEtOS43NzIsMzQuOTg4LTIxLjcyMmw5My43MjUtMTg5LjkwOSAgICAgQzUwNi4zMDksMjAyLjAzNiw1MDAuMjQ4LDE5Mi4yNDMsNDg2Ljg3NCwxOTIuMjQzeiIgZmlsbD0iIzU1NTU1NSIvPgoJCTwvZz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K"
+              />
+              <h2 class="heading heading--small">Marketing</h2>
+              <p class="para">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque
+                tempore sed vitae molestiae ab. Error.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="about__service padding-responsive--top">
+          <div class="container">
+            <h1 class="heading">Waxom is realization of Your ideas</h1>
+            <p class="para">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laboriosam omnis dolorem quo magni exercitationem atque rerum
+              incidunt vitae in repudiandae!
+            </p>
+            <img
+              class="about__main-image padding-responsive--top"
+              src="img/screenshots.png"
+              alt="3 open browser windows"
+            />
+          </div>
+        </div>
+        <div class="about__bar padding-responsive--y">
+          <div class="container about__bar-wrapper">
+            <div>
+              <h2 class="heading">
+                <span class="brown3">Waxom</span> Multipurpose Wordpress Theme
+              </h2>
+              <p class="para">
+                Don't forget to rate the template. Thanks so much!
+              </p>
+            </div>
+            <button class="btn">Get started</button>
+          </div>
+        </div>
+      </section>
+      <section class="projects">
+        <div class="container padding-responsive--y">
+          <h1 class="heading">Our latest projects</h1>
+          <p class="para">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci
+            eligendi vitae vel reiciendis, itaque quas qui unde mollitia maiores
+            sapiente!
+          </p>
+          <div class="project__categories padding-responsive--top">
+            <button class="btn btn--small active">All</button>
+            <button class="btn btn--small">Web Design</button>
+            <button class="btn btn--small">Mobile App</button>
+            <button class="btn btn--small">Illustration</button>
+            <button class="btn btn--small">Photography</button>
+          </div>
+          <div class="projects__list padding-responsive--top flex-list">
+            <div class="projects__project">
+              <div class="projects__project-image-wrapper">
+                <img
+                  src="img/smartphone.jpg"
+                  alt="a hand holding smartphone"
+                  class="projects__project-image"
+                />
+                <img
+                  class="projects__magnifier-icon"
+                  src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgNDg1LjIxMyA0ODUuMjEzIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0ODUuMjEzIDQ4NS4yMTM7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNDcxLjg4Miw0MDcuNTY3TDM2MC41NjcsMjk2LjI0M2MtMTYuNTg2LDI1Ljc5NS0zOC41MzYsNDcuNzM0LTY0LjMzMSw2NC4zMjFsMTExLjMyNCwxMTEuMzI0ICAgIGMxNy43NzIsMTcuNzY4LDQ2LjU4NywxNy43NjgsNjQuMzIxLDBDNDg5LjY1NCw0NTQuMTQ5LDQ4OS42NTQsNDI1LjMzNCw0NzEuODgyLDQwNy41Njd6IiBmaWxsPSIjRkZGRkZGIi8+CgkJPHBhdGggZD0iTTM2My45MDksMTgxLjk1NUMzNjMuOTA5LDgxLjQ3MywyODIuNDQsMCwxODEuOTU2LDBDODEuNDc0LDAsMC4wMDEsODEuNDczLDAuMDAxLDE4MS45NTVzODEuNDczLDE4MS45NTEsMTgxLjk1NSwxODEuOTUxICAgIEMyODIuNDQsMzYzLjkwNiwzNjMuOTA5LDI4Mi40MzcsMzYzLjkwOSwxODEuOTU1eiBNMTgxLjk1NiwzMTguNDE2Yy03NS4yNTIsMC0xMzYuNDY1LTYxLjIwOC0xMzYuNDY1LTEzNi40NiAgICBjMC03NS4yNTIsNjEuMjEzLTEzNi40NjUsMTM2LjQ2NS0xMzYuNDY1Yzc1LjI1LDAsMTM2LjQ2OCw2MS4yMTMsMTM2LjQ2OCwxMzYuNDY1ICAgIEMzMTguNDI0LDI1Ny4yMDgsMjU3LjIwNiwzMTguNDE2LDE4MS45NTYsMzE4LjQxNnoiIGZpbGw9IiNGRkZGRkYiLz4KCQk8cGF0aCBkPSJNNzUuODE3LDE4MS45NTVoMzAuMzIyYzAtNDEuODAzLDM0LjAxNC03NS44MTQsNzUuODE2LTc1LjgxNFY3NS44MTZDMTIzLjQzOCw3NS44MTYsNzUuODE3LDEyMy40MzcsNzUuODE3LDE4MS45NTV6IiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg=="
+                />
+              </div>
+              <div class="projects__project-text-wrapper">
+                <h2 class="heading heading--small">
+                  Lorem ipsum dolor sit amet
+                </h2>
+                <p class="para">Dolore at error eos cumque</p>
+              </div>
+            </div>
+            <div class="projects__project">
+              <div class="projects__project-image-wrapper">
+                <img
+                  src="img/rock1.jpg"
+                  alt="a rock on the seashore"
+                  class="projects__project-image"
+                />
+                <img
+                  class="projects__magnifier-icon"
+                  src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgNDg1LjIxMyA0ODUuMjEzIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0ODUuMjEzIDQ4NS4yMTM7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNDcxLjg4Miw0MDcuNTY3TDM2MC41NjcsMjk2LjI0M2MtMTYuNTg2LDI1Ljc5NS0zOC41MzYsNDcuNzM0LTY0LjMzMSw2NC4zMjFsMTExLjMyNCwxMTEuMzI0ICAgIGMxNy43NzIsMTcuNzY4LDQ2LjU4NywxNy43NjgsNjQuMzIxLDBDNDg5LjY1NCw0NTQuMTQ5LDQ4OS42NTQsNDI1LjMzNCw0NzEuODgyLDQwNy41Njd6IiBmaWxsPSIjRkZGRkZGIi8+CgkJPHBhdGggZD0iTTM2My45MDksMTgxLjk1NUMzNjMuOTA5LDgxLjQ3MywyODIuNDQsMCwxODEuOTU2LDBDODEuNDc0LDAsMC4wMDEsODEuNDczLDAuMDAxLDE4MS45NTVzODEuNDczLDE4MS45NTEsMTgxLjk1NSwxODEuOTUxICAgIEMyODIuNDQsMzYzLjkwNiwzNjMuOTA5LDI4Mi40MzcsMzYzLjkwOSwxODEuOTU1eiBNMTgxLjk1NiwzMTguNDE2Yy03NS4yNTIsMC0xMzYuNDY1LTYxLjIwOC0xMzYuNDY1LTEzNi40NiAgICBjMC03NS4yNTIsNjEuMjEzLTEzNi40NjUsMTM2LjQ2NS0xMzYuNDY1Yzc1LjI1LDAsMTM2LjQ2OCw2MS4yMTMsMTM2LjQ2OCwxMzYuNDY1ICAgIEMzMTguNDI0LDI1Ny4yMDgsMjU3LjIwNiwzMTguNDE2LDE4MS45NTYsMzE4LjQxNnoiIGZpbGw9IiNGRkZGRkYiLz4KCQk8cGF0aCBkPSJNNzUuODE3LDE4MS45NTVoMzAuMzIyYzAtNDEuODAzLDM0LjAxNC03NS44MTQsNzUuODE2LTc1LjgxNFY3NS44MTZDMTIzLjQzOCw3NS44MTYsNzUuODE3LDEyMy40MzcsNzUuODE3LDE4MS45NTV6IiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg=="
+                />
+              </div>
+              <div class="projects__project-text-wrapper">
+                <h2 class="heading heading--small">
+                  Sunt cumque voluptas quasi
+                </h2>
+                <p class="para">Consectetur adipisicing.</p>
+              </div>
+            </div>
+            <div class="projects__project">
+              <div class="projects__project-image-wrapper">
+                <img
+                  src="img/book1.jpg"
+                  alt="an open book"
+                  class="projects__project-image"
+                />
+                <img
+                  class="projects__magnifier-icon"
+                  src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgNDg1LjIxMyA0ODUuMjEzIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0ODUuMjEzIDQ4NS4yMTM7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNDcxLjg4Miw0MDcuNTY3TDM2MC41NjcsMjk2LjI0M2MtMTYuNTg2LDI1Ljc5NS0zOC41MzYsNDcuNzM0LTY0LjMzMSw2NC4zMjFsMTExLjMyNCwxMTEuMzI0ICAgIGMxNy43NzIsMTcuNzY4LDQ2LjU4NywxNy43NjgsNjQuMzIxLDBDNDg5LjY1NCw0NTQuMTQ5LDQ4OS42NTQsNDI1LjMzNCw0NzEuODgyLDQwNy41Njd6IiBmaWxsPSIjRkZGRkZGIi8+CgkJPHBhdGggZD0iTTM2My45MDksMTgxLjk1NUMzNjMuOTA5LDgxLjQ3MywyODIuNDQsMCwxODEuOTU2LDBDODEuNDc0LDAsMC4wMDEsODEuNDczLDAuMDAxLDE4MS45NTVzODEuNDczLDE4MS45NTEsMTgxLjk1NSwxODEuOTUxICAgIEMyODIuNDQsMzYzLjkwNiwzNjMuOTA5LDI4Mi40MzcsMzYzLjkwOSwxODEuOTU1eiBNMTgxLjk1NiwzMTguNDE2Yy03NS4yNTIsMC0xMzYuNDY1LTYxLjIwOC0xMzYuNDY1LTEzNi40NiAgICBjMC03NS4yNTIsNjEuMjEzLTEzNi40NjUsMTM2LjQ2NS0xMzYuNDY1Yzc1LjI1LDAsMTM2LjQ2OCw2MS4yMTMsMTM2LjQ2OCwxMzYuNDY1ICAgIEMzMTguNDI0LDI1Ny4yMDgsMjU3LjIwNiwzMTguNDE2LDE4MS45NTYsMzE4LjQxNnoiIGZpbGw9IiNGRkZGRkYiLz4KCQk8cGF0aCBkPSJNNzUuODE3LDE4MS45NTVoMzAuMzIyYzAtNDEuODAzLDM0LjAxNC03NS44MTQsNzUuODE2LTc1LjgxNFY3NS44MTZDMTIzLjQzOCw3NS44MTYsNzUuODE3LDEyMy40MzcsNzUuODE3LDE4MS45NTV6IiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg=="
+                />
+              </div>
+              <div class="projects__project-text-wrapper">
+                <h2 class="heading heading--small">
+                  Delectus deserunt ducimus
+                </h2>
+                <p class="para">Eveniet, esse perferendis!</p>
+              </div>
+            </div>
+            <div class="projects__project">
+              <div class="projects__project-image-wrapper">
+                <img
+                  src="img/rock2.jpg"
+                  alt="a rock covered with moss"
+                  class="projects__project-image"
+                />
+                <img
+                  class="projects__magnifier-icon"
+                  src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgNDg1LjIxMyA0ODUuMjEzIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0ODUuMjEzIDQ4NS4yMTM7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNDcxLjg4Miw0MDcuNTY3TDM2MC41NjcsMjk2LjI0M2MtMTYuNTg2LDI1Ljc5NS0zOC41MzYsNDcuNzM0LTY0LjMzMSw2NC4zMjFsMTExLjMyNCwxMTEuMzI0ICAgIGMxNy43NzIsMTcuNzY4LDQ2LjU4NywxNy43NjgsNjQuMzIxLDBDNDg5LjY1NCw0NTQuMTQ5LDQ4OS42NTQsNDI1LjMzNCw0NzEuODgyLDQwNy41Njd6IiBmaWxsPSIjRkZGRkZGIi8+CgkJPHBhdGggZD0iTTM2My45MDksMTgxLjk1NUMzNjMuOTA5LDgxLjQ3MywyODIuNDQsMCwxODEuOTU2LDBDODEuNDc0LDAsMC4wMDEsODEuNDczLDAuMDAxLDE4MS45NTVzODEuNDczLDE4MS45NTEsMTgxLjk1NSwxODEuOTUxICAgIEMyODIuNDQsMzYzLjkwNiwzNjMuOTA5LDI4Mi40MzcsMzYzLjkwOSwxODEuOTU1eiBNMTgxLjk1NiwzMTguNDE2Yy03NS4yNTIsMC0xMzYuNDY1LTYxLjIwOC0xMzYuNDY1LTEzNi40NiAgICBjMC03NS4yNTIsNjEuMjEzLTEzNi40NjUsMTM2LjQ2NS0xMzYuNDY1Yzc1LjI1LDAsMTM2LjQ2OCw2MS4yMTMsMTM2LjQ2OCwxMzYuNDY1ICAgIEMzMTguNDI0LDI1Ny4yMDgsMjU3LjIwNiwzMTguNDE2LDE4MS45NTYsMzE4LjQxNnoiIGZpbGw9IiNGRkZGRkYiLz4KCQk8cGF0aCBkPSJNNzUuODE3LDE4MS45NTVoMzAuMzIyYzAtNDEuODAzLDM0LjAxNC03NS44MTQsNzUuODE2LTc1LjgxNFY3NS44MTZDMTIzLjQzOCw3NS44MTYsNzUuODE3LDEyMy40MzcsNzUuODE3LDE4MS45NTV6IiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg=="
+                />
+              </div>
+              <div class="projects__project-text-wrapper">
+                <h2 class="heading heading--small">Natus nulla blanditiis!</h2>
+                <p class="para">Ullam vitae laboriosam blanditiis harum.</p>
+              </div>
+            </div>
+            <div class="projects__project">
+              <div class="projects__project-image-wrapper">
+                <img
+                  src="img/book2.jpg"
+                  alt="an open book"
+                  class="projects__project-image"
+                />
+                <img
+                  class="projects__magnifier-icon"
+                  src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgNDg1LjIxMyA0ODUuMjEzIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0ODUuMjEzIDQ4NS4yMTM7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNDcxLjg4Miw0MDcuNTY3TDM2MC41NjcsMjk2LjI0M2MtMTYuNTg2LDI1Ljc5NS0zOC41MzYsNDcuNzM0LTY0LjMzMSw2NC4zMjFsMTExLjMyNCwxMTEuMzI0ICAgIGMxNy43NzIsMTcuNzY4LDQ2LjU4NywxNy43NjgsNjQuMzIxLDBDNDg5LjY1NCw0NTQuMTQ5LDQ4OS42NTQsNDI1LjMzNCw0NzEuODgyLDQwNy41Njd6IiBmaWxsPSIjRkZGRkZGIi8+CgkJPHBhdGggZD0iTTM2My45MDksMTgxLjk1NUMzNjMuOTA5LDgxLjQ3MywyODIuNDQsMCwxODEuOTU2LDBDODEuNDc0LDAsMC4wMDEsODEuNDczLDAuMDAxLDE4MS45NTVzODEuNDczLDE4MS45NTEsMTgxLjk1NSwxODEuOTUxICAgIEMyODIuNDQsMzYzLjkwNiwzNjMuOTA5LDI4Mi40MzcsMzYzLjkwOSwxODEuOTU1eiBNMTgxLjk1NiwzMTguNDE2Yy03NS4yNTIsMC0xMzYuNDY1LTYxLjIwOC0xMzYuNDY1LTEzNi40NiAgICBjMC03NS4yNTIsNjEuMjEzLTEzNi40NjUsMTM2LjQ2NS0xMzYuNDY1Yzc1LjI1LDAsMTM2LjQ2OCw2MS4yMTMsMTM2LjQ2OCwxMzYuNDY1ICAgIEMzMTguNDI0LDI1Ny4yMDgsMjU3LjIwNiwzMTguNDE2LDE4MS45NTYsMzE4LjQxNnoiIGZpbGw9IiNGRkZGRkYiLz4KCQk8cGF0aCBkPSJNNzUuODE3LDE4MS45NTVoMzAuMzIyYzAtNDEuODAzLDM0LjAxNC03NS44MTQsNzUuODE2LTc1LjgxNFY3NS44MTZDMTIzLjQzOCw3NS44MTYsNzUuODE3LDEyMy40MzcsNzUuODE3LDE4MS45NTV6IiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg=="
+                />
+              </div>
+              <div class="projects__project-text-wrapper">
+                <h2 class="heading heading--small">
+                  Iste exercitationem facere maiores
+                </h2>
+                <p class="para">Laborum vitae perspiciatis repudiandae</p>
+              </div>
+            </div>
+            <div class="projects__project">
+              <div class="projects__project-image-wrapper">
+                <img
+                  src="img/cliff.jpg"
+                  alt="a cliff on the seashore"
+                  class="projects__project-image"
+                />
+                <img
+                  class="projects__magnifier-icon"
+                  src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgNDg1LjIxMyA0ODUuMjEzIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0ODUuMjEzIDQ4NS4yMTM7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNDcxLjg4Miw0MDcuNTY3TDM2MC41NjcsMjk2LjI0M2MtMTYuNTg2LDI1Ljc5NS0zOC41MzYsNDcuNzM0LTY0LjMzMSw2NC4zMjFsMTExLjMyNCwxMTEuMzI0ICAgIGMxNy43NzIsMTcuNzY4LDQ2LjU4NywxNy43NjgsNjQuMzIxLDBDNDg5LjY1NCw0NTQuMTQ5LDQ4OS42NTQsNDI1LjMzNCw0NzEuODgyLDQwNy41Njd6IiBmaWxsPSIjRkZGRkZGIi8+CgkJPHBhdGggZD0iTTM2My45MDksMTgxLjk1NUMzNjMuOTA5LDgxLjQ3MywyODIuNDQsMCwxODEuOTU2LDBDODEuNDc0LDAsMC4wMDEsODEuNDczLDAuMDAxLDE4MS45NTVzODEuNDczLDE4MS45NTEsMTgxLjk1NSwxODEuOTUxICAgIEMyODIuNDQsMzYzLjkwNiwzNjMuOTA5LDI4Mi40MzcsMzYzLjkwOSwxODEuOTU1eiBNMTgxLjk1NiwzMTguNDE2Yy03NS4yNTIsMC0xMzYuNDY1LTYxLjIwOC0xMzYuNDY1LTEzNi40NiAgICBjMC03NS4yNTIsNjEuMjEzLTEzNi40NjUsMTM2LjQ2NS0xMzYuNDY1Yzc1LjI1LDAsMTM2LjQ2OCw2MS4yMTMsMTM2LjQ2OCwxMzYuNDY1ICAgIEMzMTguNDI0LDI1Ny4yMDgsMjU3LjIwNiwzMTguNDE2LDE4MS45NTYsMzE4LjQxNnoiIGZpbGw9IiNGRkZGRkYiLz4KCQk8cGF0aCBkPSJNNzUuODE3LDE4MS45NTVoMzAuMzIyYzAtNDEuODAzLDM0LjAxNC03NS44MTQsNzUuODE2LTc1LjgxNFY3NS44MTZDMTIzLjQzOCw3NS44MTYsNzUuODE3LDEyMy40MzcsNzUuODE3LDE4MS45NTV6IiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg=="
+                />
+              </div>
+              <div class="projects__project-text-wrapper">
+                <h2 class="heading heading--small">
+                  Consectetur adipisicing elit
+                </h2>
+                <p class="para">Id voluptatibus ipsam</p>
+              </div>
+            </div>
+            <div class="projects__project">
+              <div class="projects__project-image-wrapper">
+                <img
+                  src="img/coffee.jpg"
+                  alt="a coffee on the wooden table"
+                  class="projects__project-image"
+                />
+                <img
+                  class="projects__magnifier-icon"
+                  src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgNDg1LjIxMyA0ODUuMjEzIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0ODUuMjEzIDQ4NS4yMTM7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNDcxLjg4Miw0MDcuNTY3TDM2MC41NjcsMjk2LjI0M2MtMTYuNTg2LDI1Ljc5NS0zOC41MzYsNDcuNzM0LTY0LjMzMSw2NC4zMjFsMTExLjMyNCwxMTEuMzI0ICAgIGMxNy43NzIsMTcuNzY4LDQ2LjU4NywxNy43NjgsNjQuMzIxLDBDNDg5LjY1NCw0NTQuMTQ5LDQ4OS42NTQsNDI1LjMzNCw0NzEuODgyLDQwNy41Njd6IiBmaWxsPSIjRkZGRkZGIi8+CgkJPHBhdGggZD0iTTM2My45MDksMTgxLjk1NUMzNjMuOTA5LDgxLjQ3MywyODIuNDQsMCwxODEuOTU2LDBDODEuNDc0LDAsMC4wMDEsODEuNDczLDAuMDAxLDE4MS45NTVzODEuNDczLDE4MS45NTEsMTgxLjk1NSwxODEuOTUxICAgIEMyODIuNDQsMzYzLjkwNiwzNjMuOTA5LDI4Mi40MzcsMzYzLjkwOSwxODEuOTU1eiBNMTgxLjk1NiwzMTguNDE2Yy03NS4yNTIsMC0xMzYuNDY1LTYxLjIwOC0xMzYuNDY1LTEzNi40NiAgICBjMC03NS4yNTIsNjEuMjEzLTEzNi40NjUsMTM2LjQ2NS0xMzYuNDY1Yzc1LjI1LDAsMTM2LjQ2OCw2MS4yMTMsMTM2LjQ2OCwxMzYuNDY1ICAgIEMzMTguNDI0LDI1Ny4yMDgsMjU3LjIwNiwzMTguNDE2LDE4MS45NTYsMzE4LjQxNnoiIGZpbGw9IiNGRkZGRkYiLz4KCQk8cGF0aCBkPSJNNzUuODE3LDE4MS45NTVoMzAuMzIyYzAtNDEuODAzLDM0LjAxNC03NS44MTQsNzUuODE2LTc1LjgxNFY3NS44MTZDMTIzLjQzOCw3NS44MTYsNzUuODE3LDEyMy40MzcsNzUuODE3LDE4MS45NTV6IiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg=="
+                />
+              </div>
+              <div class="projects__project-text-wrapper">
+                <h2 class="heading heading--small">Cum adipisci error</h2>
+                <p class="para">Saepe eius modi ratione</p>
+              </div>
+            </div>
+            <div class="projects__project">
+              <div class="projects__project-image-wrapper">
+                <img
+                  src="img/wolf.jpg"
+                  alt="a wolf on snowy background"
+                  class="projects__project-image"
+                />
+                <img
+                  class="projects__magnifier-icon"
+                  src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgNDg1LjIxMyA0ODUuMjEzIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0ODUuMjEzIDQ4NS4yMTM7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNDcxLjg4Miw0MDcuNTY3TDM2MC41NjcsMjk2LjI0M2MtMTYuNTg2LDI1Ljc5NS0zOC41MzYsNDcuNzM0LTY0LjMzMSw2NC4zMjFsMTExLjMyNCwxMTEuMzI0ICAgIGMxNy43NzIsMTcuNzY4LDQ2LjU4NywxNy43NjgsNjQuMzIxLDBDNDg5LjY1NCw0NTQuMTQ5LDQ4OS42NTQsNDI1LjMzNCw0NzEuODgyLDQwNy41Njd6IiBmaWxsPSIjRkZGRkZGIi8+CgkJPHBhdGggZD0iTTM2My45MDksMTgxLjk1NUMzNjMuOTA5LDgxLjQ3MywyODIuNDQsMCwxODEuOTU2LDBDODEuNDc0LDAsMC4wMDEsODEuNDczLDAuMDAxLDE4MS45NTVzODEuNDczLDE4MS45NTEsMTgxLjk1NSwxODEuOTUxICAgIEMyODIuNDQsMzYzLjkwNiwzNjMuOTA5LDI4Mi40MzcsMzYzLjkwOSwxODEuOTU1eiBNMTgxLjk1NiwzMTguNDE2Yy03NS4yNTIsMC0xMzYuNDY1LTYxLjIwOC0xMzYuNDY1LTEzNi40NiAgICBjMC03NS4yNTIsNjEuMjEzLTEzNi40NjUsMTM2LjQ2NS0xMzYuNDY1Yzc1LjI1LDAsMTM2LjQ2OCw2MS4yMTMsMTM2LjQ2OCwxMzYuNDY1ICAgIEMzMTguNDI0LDI1Ny4yMDgsMjU3LjIwNiwzMTguNDE2LDE4MS45NTYsMzE4LjQxNnoiIGZpbGw9IiNGRkZGRkYiLz4KCQk8cGF0aCBkPSJNNzUuODE3LDE4MS45NTVoMzAuMzIyYzAtNDEuODAzLDM0LjAxNC03NS44MTQsNzUuODE2LTc1LjgxNFY3NS44MTZDMTIzLjQzOCw3NS44MTYsNzUuODE3LDEyMy40MzcsNzUuODE3LDE4MS45NTV6IiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg=="
+                />
+              </div>
+              <div class="projects__project-text-wrapper">
+                <h2 class="heading heading--small">Adipisicing elite animi</h2>
+                <p class="para">Ninima beatae recusandae in?</p>
+              </div>
+            </div>
+            <div class="projects__project">
+              <div class="projects__project-image-wrapper">
+                <img
+                  src="img/tree.jpg"
+                  alt="a tree against the background of the setting sun"
+                  class="projects__project-image"
+                />
+                <img
+                  class="projects__magnifier-icon"
+                  src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgNDg1LjIxMyA0ODUuMjEzIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0ODUuMjEzIDQ4NS4yMTM7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNDcxLjg4Miw0MDcuNTY3TDM2MC41NjcsMjk2LjI0M2MtMTYuNTg2LDI1Ljc5NS0zOC41MzYsNDcuNzM0LTY0LjMzMSw2NC4zMjFsMTExLjMyNCwxMTEuMzI0ICAgIGMxNy43NzIsMTcuNzY4LDQ2LjU4NywxNy43NjgsNjQuMzIxLDBDNDg5LjY1NCw0NTQuMTQ5LDQ4OS42NTQsNDI1LjMzNCw0NzEuODgyLDQwNy41Njd6IiBmaWxsPSIjRkZGRkZGIi8+CgkJPHBhdGggZD0iTTM2My45MDksMTgxLjk1NUMzNjMuOTA5LDgxLjQ3MywyODIuNDQsMCwxODEuOTU2LDBDODEuNDc0LDAsMC4wMDEsODEuNDczLDAuMDAxLDE4MS45NTVzODEuNDczLDE4MS45NTEsMTgxLjk1NSwxODEuOTUxICAgIEMyODIuNDQsMzYzLjkwNiwzNjMuOTA5LDI4Mi40MzcsMzYzLjkwOSwxODEuOTU1eiBNMTgxLjk1NiwzMTguNDE2Yy03NS4yNTIsMC0xMzYuNDY1LTYxLjIwOC0xMzYuNDY1LTEzNi40NiAgICBjMC03NS4yNTIsNjEuMjEzLTEzNi40NjUsMTM2LjQ2NS0xMzYuNDY1Yzc1LjI1LDAsMTM2LjQ2OCw2MS4yMTMsMTM2LjQ2OCwxMzYuNDY1ICAgIEMzMTguNDI0LDI1Ny4yMDgsMjU3LjIwNiwzMTguNDE2LDE4MS45NTYsMzE4LjQxNnoiIGZpbGw9IiNGRkZGRkYiLz4KCQk8cGF0aCBkPSJNNzUuODE3LDE4MS45NTVoMzAuMzIyYzAtNDEuODAzLDM0LjAxNC03NS44MTQsNzUuODE2LTc1LjgxNFY3NS44MTZDMTIzLjQzOCw3NS44MTYsNzUuODE3LDEyMy40MzcsNzUuODE3LDE4MS45NTV6IiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg=="
+                />
+              </div>
+              <div class="projects__project-text-wrapper">
+                <h2 class="heading heading--small">
+                  Aliquam optio, in adipisci similique
+                </h2>
+                <p class="para">Quaerat temporibus rerum deleniti</p>
+              </div>
+            </div>
+          </div>
+          <button class="projects__btn-load-more btn">Load more</button>
+        </div>
+      </section>
+      <section class="presentation">
+        <div class="presentation__video">
+          <div class="presentation__intro">
+            <div class="container">
+              <svg
+              class="presentation__btn-play"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              version="1.1"
+              id="Capa_1"
+              x="0px"
+              y="0px"
+              viewBox="0 0 294.843 294.843"
+              style="enable-background:new 0 0 294.843 294.843;"
+              xml:space="preserve"
+              width="512px"
+              height="512px"
+            >
+              <g>
+                <path
+                  class="ring"
+                  d="M278.527,79.946c-10.324-20.023-25.38-37.704-43.538-51.132c-2.665-1.97-6.421-1.407-8.392,1.257s-1.407,6.421,1.257,8.392   c16.687,12.34,30.521,28.586,40.008,46.983c9.94,19.277,14.98,40.128,14.98,61.976c0,74.671-60.75,135.421-135.421,135.421   S12,222.093,12,147.421S72.75,12,147.421,12c3.313,0,6-2.687,6-6s-2.687-6-6-6C66.133,0,0,66.133,0,147.421   s66.133,147.421,147.421,147.421s147.421-66.133,147.421-147.421C294.842,123.977,289.201,100.645,278.527,79.946z"
+                  fill="#FFFFFF"
+                />
+                <path
+                  class="arrow"
+                  d="M109.699,78.969c-1.876,1.067-3.035,3.059-3.035,5.216v131.674c0,3.314,2.687,6,6,6s6-2.686,6-6V94.74l88.833,52.883   l-65.324,42.087c-2.785,1.795-3.589,5.508-1.794,8.293c1.796,2.786,5.508,3.59,8.294,1.794l73.465-47.333   c1.746-1.125,2.786-3.073,2.749-5.15c-0.037-2.077-1.145-3.987-2.93-5.05L115.733,79.029   C113.877,77.926,111.575,77.902,109.699,78.969z"
+                  fill="#FFFFFF"
+                />
+              </g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              </svg>
+              <h1 class="heading">Waxom presentation video</h1>
+              <p class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo non
+                ratione quod fugiat ea optio facilis maxime!
+              </p>
+              </div>
+          </div>
+          <iframe
+            src="https://www.youtube.com/embed/zNDoMBDDyAE"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="presentation__mobile">
+          <div
+            class="presentation__mobile-wrapper container padding-responsive--top"
+          >
+            <div class="presentation__image-wrapper">
+              <img
+                src="img/smartphone2.png"
+                alt="a hand holding the smartphone"
+              />
+            </div>
+            <div
+              class="presentation__mobile-text-wrapper padding-responsive--y"
+            >
+              <h2 class="heading">Excellent for mobile devices</h2>
+              <p class="para">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet
+                enim ea sit ex mollitia. Tenetur ullam, voluptates saepe non
+                veritatis autem eligendi repellat consequuntur at obcaecati
+                ipsum, aliquam aliquid! Facere!
+              </p>
+              <ul class="presentation__features">
+                <li class="presentation__feature para">
+                  Repellat consequuntur at obcaecati sit amet aliquam
+                </li>
+                <li class="presentation__feature para">
+                  Enim ea sit ex mollitiasaepe non veritatis
+                </li>
+                <li class="presentation__feature para">
+                  Consectetur adipisicing elit ullam, voluptates mollitia
+                </li>
+                <li class="presentation__feature para">
+                  Lorem ipsum dolor sit amet aliquam aliquid
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="presentation__bg-container">
+          <div class="padding-responsive--y">
+            <div class="presentation__counters">
+              <div class="presentation__counter">
+                <div class="presentation__counter-elems-wrapper">
+                  <img
+                    src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik0zOTIuOTYzLDE5OS41OTdjMjQuOTYtMjAuNzAyLDQwLjg4Ni01MS45MzcsNDAuODg2LTg2LjgyM0M0MzMuODQ4LDUwLjU5MiwzODMuMjU4LDAuMDAyLDMyMS4wNzUsMC4wMDIgICAgcy0xMTIuNzcyLDUwLjU5LTExMi43NzIsMTEyLjc3MmMwLDguMTI4LDAuODcyLDE2LjA1NSwyLjUxNCwyMy43Yy02LjQyMi0xLjE0LTEzLjAyOC0xLjczNy0xOS43NzItMS43MzcgICAgYy02Mi4xODMsMC0xMTIuNzcyLDUwLjU5LTExMi43NzIsMTEyLjc3MmMwLDM0Ljg4MywxNS45MjMsNjYuMTE1LDQwLjg3OSw4Ni44MThDNDkuMzM5LDM2Mi43ODksMCw0MzEuMzk0LDAsNTExLjMxN2g0MC4wMDkgICAgYzAtODMuMjgyLDY3Ljc1NC0xNTEuMDM1LDE1MS4wMzUtMTUxLjAzNWM2Mi4xODMsMCwxMTIuNzcyLTUwLjU5LDExMi43NzItMTEyLjc3MmMwLTguMTI4LTAuODcyLTE2LjA1Ni0yLjUxNC0yMy43MDEgICAgYzYuNDIyLDEuMTQsMTMuMDI4LDEuNzM3LDE5Ljc3MiwxLjczN2M0OS4wNzgsMCw5Mi43NDYsMjMuNTQ0LDEyMC4zNSw1OS45MTZsMjcuMTExLTMwLjE4NiAgICBDNDQ4LjQ5NywyMzAuOTU4LDQyMi41NjksMjExLjY3MiwzOTIuOTYzLDE5OS41OTd6IE0xOTEuMDQ1LDMyMC4yNzJjLTQwLjEyMSwwLTcyLjc2My0zMi42NDEtNzIuNzYzLTcyLjc2MyAgICBjMC00MC4xMjIsMzIuNjQyLTcyLjc2Myw3Mi43NjMtNzIuNzYzczcyLjc2MywzMi42NDIsNzIuNzYzLDcyLjc2M1MyMzEuMTY2LDMyMC4yNzIsMTkxLjA0NSwzMjAuMjcyeiBNMzIxLjA3NSwxODUuNTM2ICAgIGMtNDAuMTIxLDAtNzIuNzYzLTMyLjY0MS03Mi43NjMtNzIuNzYzYzAtNDAuMTIyLDMyLjY0Mi03Mi43NjIsNzIuNzYzLTcyLjc2MnM3Mi43NjMsMzIuNjQxLDcyLjc2Myw3Mi43NjMgICAgQzM5My44MzgsMTUyLjg5NywzNjEuMTk3LDE4NS41MzYsMzIxLjA3NSwxODUuNTM2eiIgZmlsbD0iI2M3YjI5OSIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHBvbHlnb24gcG9pbnRzPSI0ODIuMjMzLDI5OS45MDMgMzQzLjI3MSw0NTQuNjIzIDI2NC44NTEsMzc5Ljk3NCAyMzcuMjY3LDQwOC45NTQgMzQ1LjUxOSw1MTEuOTk4IDUxMiwzMjYuNjM4ICAgIiBmaWxsPSIjYzdiMjk5Ii8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg=="
+                    alt="people icon"
+                  />
+                  <p class="para presentation__counter-number">2344</p>
+                </div>
+                <p class="para presentation__counter-description">
+                  Satisfied clients
+                </p>
+              </div>
+              <div class="presentation__counter">
+                <div class="presentation__counter-elems-wrapper">
+                  <img
+                    src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik00MjIsMjEwLjc0di0zMEgzMHY3NWMwLDY5Ljc1MywzNi43NjgsMTMxLjAzNiw5Mi4xMDksMTY2SDB2MTVjMCw0MS4zNTUsMzMuNjQ1LDc1LDc1LDc1aDMwMmM0MS4zNTUsMCw3NS0zMy42NDUsNzUtNzUgICAgdi0xNUgzMjkuODkxYzEzLjM0My04LjQzLDI1LjU3LTE4LjM3NCwzNi44MjQtMzBINDA3YzU3Ljg5NywwLDEwNS00Ny41NTEsMTA1LTEwNnYtNzVINDIyeiBNNDE5LjQzLDQ1MS43NCAgICBjLTYuMTkxLDE3LjQ2MS0yMi44NzQsMzAtNDIuNDMsMzBINzVjLTE5LjU1NiwwLTM2LjIzOS0xMi41MzktNDIuNDMtMzBINDE5LjQzeiBNMjI2LDQyMS43NGMtOTEuNTMzLDAtMTY2LTc0LjQ2Ny0xNjYtMTY2di00NSAgICBoMzMydjQ1QzM5MiwzNDcuMjczLDMxNy41MzMsNDIxLjc0LDIyNiw0MjEuNzR6IE00ODIsMjg1Ljc0YzAsNDEuOTA3LTMzLjY0NSw3Ni03NSw3NmgtMTYuMzYxICAgIGMyMC40MDgtMzEuNDAzLDMxLjM2MS02Ny45MTMsMzEuMzYxLTEwNnYtMTVoNjBWMjg1Ljc0eiIgZmlsbD0iI2M3YjI5OSIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTE2MC4wNywwLjI2bC0xNi42NDEsMjQuOTYyYzUuOTU4LDMuOTcyLDkuMzc1LDEwLjM1OCw5LjM3NSwxNy41MTljMCw3LjE2MS0zLjQxNywxMy41NDctOS4zNzUsMTcuNTE5ICAgIGMtMTQuMjM2LDkuNDkxLTIyLjczNSwyNS41NTktMjIuNzM1LDQyLjk4MXM4LjUsMzMuNDksMjIuNzM1LDQyLjk4bDE2LjY0MS0yNC45NjJjLTUuOTU4LTMuOTcyLTkuMzc2LTEwLjU0LTkuMzc2LTE4LjAxOSAgICBzMy40MTctMTQuMDQ2LDkuMzc2LTE4LjAxOWMxNC4yMzYtOS40OTEsMjIuNzM1LTI1LjM3MiwyMi43MzUtNDIuNDgxUzE3NC4zMDYsOS43NSwxNjAuMDcsMC4yNnoiIGZpbGw9IiNjN2IyOTkiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik0yMzUuMDcsMC4yNmwtMTYuNjQxLDI0Ljk2MmM1Ljk1OCwzLjk3Miw5LjM3NSwxMC4zNTgsOS4zNzUsMTcuNTE5YzAsNy4xNjEtMy40MTcsMTMuNTQ3LTkuMzc1LDE3LjUxOSAgICBjLTE0LjIzNiw5LjQ5MS0yMi43MzUsMjUuNTU5LTIyLjczNSw0Mi45ODFzOC41LDMzLjQ5LDIyLjczNSw0Mi45OGwxNi42NDEtMjQuOTYyYy01Ljk1OC0zLjk3Mi05LjM3Ni0xMC41NC05LjM3Ni0xOC4wMTkgICAgczMuNDE3LTE0LjA0Niw5LjM3Ni0xOC4wMTljMTQuMjM2LTkuNDkxLDIyLjczNS0yNS4zNzIsMjIuNzM1LTQyLjQ4MVMyNDkuMzA2LDkuNzUsMjM1LjA3LDAuMjZ6IiBmaWxsPSIjYzdiMjk5Ii8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMzExLjA3LDAuMjZsLTE2LjY0MSwyNC45NjJjNS45NTgsMy45NzIsOS4zNzUsMTAuMzU4LDkuMzc1LDE3LjUxOWMwLDcuMTYxLTMuNDE3LDEzLjU0Ny05LjM3NSwxNy41MTkgICAgYy0xNC4yMzYsOS40OTEtMjIuNzM1LDI1LjU1OS0yMi43MzUsNDIuOTgxczguNSwzMy40OSwyMi43MzUsNDIuOThsMTYuNjQxLTI0Ljk2MmMtNS45NTgtMy45NzItOS4zNzYtMTAuNTQtOS4zNzYtMTguMDE5ICAgIHMzLjQxNy0xNC4wNDYsOS4zNzYtMTguMDE5YzE0LjIzNi05LjQ5MSwyMi43MzUtMjUuMzcyLDIyLjczNS00Mi40ODFTMzI1LjMwNiw5Ljc1LDMxMS4wNywwLjI2eiIgZmlsbD0iI2M3YjI5OSIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo="
+                    alt="coffee icon"
+                  />
+                  <p class="para presentation__counter-number">2344</p>
+                </div>
+                <p class="para presentation__counter-description">
+                  Cups of coffee
+                </p>
+              </div>
+              <div class="presentation__counter">
+                <div class="presentation__counter-elems-wrapper">
+                  <img
+                    src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIxIC0yNyA1MTEuOTk5MzEgNTExIiB3aWR0aD0iNTEycHgiPjxwYXRoIGQ9Im0yNTYgLjVjLTE0MS4xNTIzNDQgMC0yNTYgODYuMTI4OTA2LTI1NiAxOTIgMCA3My45MzM1OTQgNTYuMTI4OTA2IDE0MC44MDA3ODEgMTQ0IDE3Mi42ODc1djYwLjY4NzVjLjAwMzkwNiAxNy42NzE4NzUgMTQuMzMyMDMxIDMxLjk5NjA5NCAzMi4wMDc4MTIgMzEuOTkyMTg4IDguNDgwNDY5IDAgMTYuNjE3MTg4LTMuMzcxMDk0IDIyLjYxNzE4OC05LjM2NzE4OGw2NC02NGMxMzguMTQwNjI1LTIuNzM4MjgxIDI0OS4zNzUtODcuODA4NTk0IDI0OS4zNzUtMTkyIDAtMTA1Ljg3MTA5NC0xMTQuODQ3NjU2LTE5Mi0yNTYtMTkyem0wIDM1MmMtNC4yNDIxODggMC04LjMxMjUgMS42ODc1LTExLjMxMjUgNC42ODc1bC02OC42ODc1IDY4LjY4NzV2LTcyLjExMzI4MWMtLjAwNzgxMi02Ljk4MDQ2OS00LjUzOTA2Mi0xMy4xNTIzNDQtMTEuMTk5MjE5LTE1LjI0NjA5NC04MC42NDA2MjUtMjUuODkwNjI1LTEzMi44MDA3ODEtODMuMTk5MjE5LTEzMi44MDA3ODEtMTQ2LjAxNTYyNSAwLTg4LjIyNjU2MiAxMDAuNDgwNDY5LTE2MCAyMjQtMTYwczIyNCA3MS43NzM0MzggMjI0IDE2MGMwIDg4LjIyMjY1Ni0xMDAuNDgwNDY5IDE2MC0yMjQgMTYwem0wIDAiIGZpbGw9IiNjN2IyOTkiLz48cGF0aCBkPSJtMTEyIDEyOC41aDI4OHYzMmgtMjg4em0wIDAiIGZpbGw9IiNjN2IyOTkiLz48cGF0aCBkPSJtMTEyIDIyNC41aDI4OHYzMmgtMjg4em0wIDAiIGZpbGw9IiNjN2IyOTkiLz48L3N2Zz4K"
+                    alt="chat bubble icon"
+                  />
+                  <p class="para presentation__counter-number">1134</p>
+                </div>
+                <p class="para presentation__counter-description">Blog posts</p>
+              </div>
+              <div class="presentation__counter">
+                <div class="presentation__counter-elems-wrapper">
+                  <img
+                    src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgMzIgMzIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMyIDMyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPGcgaWQ9IkhlYXJ0Ij4KCQk8Zz4KCQkJPHBhdGggZD0iTTIyLDBjLTAuMzA5LDAtMC42MTYsMC4wMTktMC45MjIsMC4wNDdjLTAuMTEyLDAuMDEtMC4yMjMsMC4wMjYtMC4zMzQsMC4wNDFjLTAuMTg4LDAuMDIzLTAuMzczLDAuMDUxLTAuNTU5LDAuMDg1ICAgICBjLTAuMTM3LDAuMDI1LTAuMjcxLDAuMDUzLTAuNDAxLDAuMDgzYy0wLjE1MywwLjAzNS0wLjMwNiwwLjA3Ni0wLjQ1OCwwLjExOGMtMC4xNDUsMC4wNC0wLjI4OCwwLjA3OS0wLjQzLDAuMTI1ICAgICBjLTAuMTI5LDAuMDQyLTAuMjU0LDAuMDkzLTAuMzgxLDAuMTRjLTAuMzM0LDAuMTI1LTAuNjYsMC4yNjYtMC45NzcsMC40MjRjLTAuMDYyLDAuMDMxLTAuMTI4LDAuMDU5LTAuMTg5LDAuMDkyICAgICBjLTAuMTY2LDAuMDg4LTAuMzI2LDAuMTg2LTAuNDg5LDAuMjgyYy0wLjA4OCwwLjA1NC0wLjE3OCwwLjEwNS0wLjI2NiwwLjE2MmMtMC4xNTYsMC4xLTAuMzA2LDAuMjA3LTAuNDU2LDAuMzE1ICAgICBDMTYuMDk0LDEuOTQ3LDE2LjA0NiwxLjk3NywxNiwyLjAxMUMxNC4yNzEsMC43MDksMTIuMTcxLDAsMTAsMEM0LjQ4NiwwLDAsNC40ODUsMCwxMGMwLDkuMDUxLDUuODIsMTcuMjM4LDE1LjU2OCwyMS45ICAgICBDMTUuNzA1LDMxLjk2NywxNS44NTMsMzIsMTYsMzJzMC4yOTUtMC4wMzMsMC40MzItMC4xQzI2LjE4LDI3LjIzOCwzMiwxOS4wNTEsMzIsMTBDMzIsNC40ODUsMjcuNTE0LDAsMjIsMHogTTE2LDI5Ljg4OSAgICAgQzcuMjI1LDI1LjUzMywyLDE4LjEyOSwyLDEwYzAtNC40MTEsMy41ODktOCw4LThjMS42MTQsMCwzLjE3NywwLjQ5OCw0LjUwMiwxLjQwNkMxMi45NDksNS4xNjksMTIsNy40NzMsMTIsMTAgICAgIGMwLDAuNTUyLDAuNDQ3LDEsMSwxczEtMC40NDgsMS0xYzAtMi4zODEsMS4wNTItNC41MTcsMi43MDgtNS45ODNjMC4xNTMtMC4xMzcsMC4zMTMtMC4yNjYsMC40NzYtMC4zOSAgICAgYzAuMDM3LTAuMDI2LDAuMDczLTAuMDU1LDAuMTEtMC4wODJjMC4xNTktMC4xMTYsMC4zMjItMC4yMjcsMC40ODktMC4zM2MwLjA0Ni0wLjAyOSwwLjA5Mi0wLjA1OCwwLjEzOS0wLjA4NSAgICAgYzAuMTYxLTAuMDk3LDAuMzI2LTAuMTg3LDAuNDkzLTAuMjcxYzAuMDU4LTAuMDI5LDAuMTE3LTAuMDU3LDAuMTc2LTAuMDg1YzAuMTYtMC4wNzYsMC4zMjItMC4xNDgsMC40ODctMC4yMTMgICAgIGMwLjA3Mi0wLjAyOSwwLjE0Ni0wLjA1NSwwLjIyMi0wLjA4MmMwLjE1NS0wLjA1NiwwLjMxMi0wLjEwOSwwLjQ3LTAuMTU1YzAuMDk3LTAuMDI3LDAuMTktMC4wNTEsMC4yODctMC4wNzQgICAgIGMwLjE0NC0wLjAzNiwwLjI4NS0wLjA3MywwLjQzMi0wLjEwMmMwLjEzMi0wLjAyNCwwLjI2Ni0wLjA0MiwwLjM5OC0wLjA2MUMyMSwyLjA3LDIxLjExMywyLjA1MSwyMS4yMjksMi4wMzkgICAgIEMyMS40ODIsMi4wMTUsMjEuNzQsMiwyMiwyYzQuNDExLDAsOCwzLjU4OSw4LDhDMzAsMTguMTI5LDI0Ljc3NSwyNS41MzMsMTYsMjkuODg5eiBNMjIsNGMtMC41NTMsMC0xLDAuNDQ4LTEsMXMwLjQ0NywxLDEsMSAgICAgYzIuMjA2LDAsNCwxLjc5NCw0LDRjMCwwLjU1MiwwLjQ0NywxLDEsMXMxLTAuNDQ4LDEtMUMyOCw2LjY5MSwyNS4zMDksNCwyMiw0eiIgZmlsbD0iI2M3YjI5OSIvPgoJCTwvZz4KCTwvZz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K"
+                    alt="heart icon"
+                  />
+                  <p class="para presentation__counter-number">7877</p>
+                </div>
+                <p class="para presentation__counter-description">Likes</p>
+              </div>
+              <div class="presentation__counter">
+                <div class="presentation__counter-elems-wrapper">
+                  <img
+                    src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ5MC43IDQ5MC43IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0OTAuNyA0OTAuNzsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI1MTJweCIgaGVpZ2h0PSI1MTJweCI+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTQ2LjgsMzc2LjFoMzk1LjljMTEuNSwwLDIwLjgtOS40LDIwLjgtMjAuOGMwLTEyOS41LTg2LjktMjM1LjktMTk3LjktMjQ3Ljl2LTIyaDE3LjdjMTEuNSwwLDIwLjgtOS40LDIwLjgtMjAuOCAgICBjMC0xMS40LTkuNC0yMC44LTIwLjgtMjAuOGgtNzcuMWMtMTEuNSwwLTIwLjgsOS40LTIwLjgsMjAuOGMwLDExLjQsOS40LDIwLjgsMjAuOCwyMC44aDE3Ljd2MjJDMTEyLjksMTE5LjQsMjYsMjI1LjgsMjYsMzU1LjMgICAgQzI2LDM2Ni44LDM1LjQsMzc2LjEsNDYuOCwzNzYuMXogTTI0NC44LDE0OGM5Mi43LDAsMTY4LjgsODIuMywxNzcuMSwxODcuNUg2Ny43Qzc3LDIzMC4zLDE1Mi4xLDE0OCwyNDQuOCwxNDh6IiBmaWxsPSIjYzdiMjk5Ii8+CgkJPHBhdGggZD0iTTQ2OS44LDQwNS4zaC00NDlDOS4zLDQwNS4zLDAsNDE0LjcsMCw0MjYuMXM5LjQsMjAuOCwyMC44LDIwLjhoNDQ4YzExLjUsMCwyMS45LTkuNCwyMS45LTIwLjhTNDgxLjMsNDA1LjMsNDY5LjgsNDA1LjN6ICAgICIgZmlsbD0iI2M3YjI5OSIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo="
+                    alt="plate cover"
+                  />
+                  <p class="para presentation__counter-number">2345</p>
+                </div>
+                <p class="para presentation__counter-description">
+                  We launched
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="blog">
+        <div class="container padding-responsive--y">
+          <h1 class="heading">Recent posts</h1>
+          <p class="para">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
+            ullam adipisci labore qui accusantium ipsa, dolor porro. Pariatur,
+            assumenda deleniti.
+          </p>
+          <div class="glide blog__slider padding-responsive--top">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide blog__slide">
+                  <div class="blog__slide-image-wrapper">
+                    <img src="img/tree.jpg" alt="a tree against the background of the setting sun">
+                    <div class="blog__slide-date">
+                      <div class="day">30</div>
+                      <div class="month">Sep.</div>
+                    </div>
+                  </div>
+                  <div class="blog__slide-text-wrapper">
+                    <h2 class="heading heading--small">Lorem ipsum dolor sit amet</h2>
+                    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, minima!</p>
+                    <a class="para">Read More</a>
+                  </div>
+                </li>
+                <li class="glide__slide blog__slide">
+                  <div class="blog__slide-image-wrapper">
+                    <img src="img/wolf.jpg" alt="a wolf on snowy background">
+                    <div class="blog__slide-date">
+                      <div class="day">21</div>
+                      <div class="month">Sep.</div>
+                    </div>
+                  </div>
+                  <div class="blog__slide-text-wrapper">
+                    <h2 class="heading heading--small">Aspernatur ullam adipisci labore</h2>
+                    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, minima!</p>
+                    <a class="para">Read More</a>
+                  </div>
+                </li>
+                <li class="glide__slide blog__slide">
+                  <div class="blog__slide-image-wrapper">
+                    <img src="img/coffee.jpg" alt="a coffee on the wooden table">
+                    <div class="blog__slide-date">
+                      <div class="day">13</div>
+                      <div class="month">Sep.</div>
+                    </div>
+                  </div>
+                  <div class="blog__slide-text-wrapper">
+                    <h2 class="heading heading--small">Ab, doloremque dignissimos fugit</h2>
+                    <p class="para">Deleniti reiciendis nulla possimus. Maxime quas, aspernatur accusantium</p>
+                    <a class="para">Read More</a>
+                  </div>
+                </li>
+                <li class="glide__slide blog__slide">
+                  <div class="blog__slide-image-wrapper">
+                    <img src="img/smartphone.jpg" alt="a hand holding the smartphone">
+                    <div class="blog__slide-date">
+                      <div class="day">08</div>
+                      <div class="month">Sep.</div>
+                    </div>
+                  </div>
+                  <div class="blog__slide-text-wrapper">
+                    <h2 class="heading heading--small">Itaque consequatur odio hic</h2>
+                    <p class="para">Quibusdam ipsam totam aperiam repellendus sunt doloremque</p>
+                    <a class="para">Read More</a>
+                  </div>
+                </li>
+                <li class="glide__slide blog__slide">
+                  <div class="blog__slide-image-wrapper">
+                    <img src="img/cliff.jpg" alt="a cliff on the seashore">
+                    <div class="blog__slide-date">
+                      <div class="day">31</div>
+                      <div class="month">Aug.</div>
+                    </div>
+                  </div>
+                  <div class="blog__slide-text-wrapper">
+                    <h2 class="heading heading--small">Lorem ipsum dolor sit amet</h2>
+                    <p class="para">Accusamus illo nam eligendi porro! Deleniti facere et ullam necessitatibus</p>
+                    <a class="para">Read More</a>
+                  </div>
+                </li>
+                <li class="glide__slide blog__slide">
+                  <div class="blog__slide-image-wrapper">
+                    <img src="img/rock2.jpg" alt="a rock covered with moss">
+                    <div class="blog__slide-date">
+                      <div class="day">22</div>
+                      <div class="month">Aug.</div>
+                    </div>
+                  </div>
+                  <div class="blog__slide-text-wrapper">
+                    <h2 class="heading heading--small">Eveniet officia consectetur excepturi</h2>
+                    <p class="para">magni aperiam molestias error quia maiores vero expedita dolorum maxime</p>
+                    <a class="para">Read More</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+              <button class="glide__arrow glide__arrow--left" data-glide-dir="<"></button>
+              <button class="glide__arrow glide__arrow--right" data-glide-dir=">"></button>
+            </div>
+          </div>
+        </div>
+        <div class="blog__partners-wrapper padding-responsive--y">
+          <div class="blog__partners flex-list container  padding-responsive--y">
+            <div class="blog__partner">
+              <img src="img/partner1.png" alt="Antonio the barber haircuts logo">
+            </div>
+            <div class="blog__partner">
+              <img src="img/partner2.png" alt="High quality delicious products logo">
+            </div>
+            <div class="blog__partner">
+              <img src="img/partner3.png" alt="designers logo">
+            </div>
+            <div class="blog__partner">
+              <img src="img/partner4.png" alt="Cafe Royal roadsters logo">
+            </div>
+          </div>
+        </div>
+        <div class="blog__social-media-wrapper padding-responsive--y">
+          <div class="blog__social-media flex-list container">
+            <div class="blog__social-medium">
+              <img class="blog__logo" src="img/logo-white.png" alt="waxom logo">
+              <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Expedita molestias harum nulla assumenda, ea neque quia iste, nam quo nihil 
+              est reiciendis iusto eveniet earum repellendus, sit fugit hic quisquam.</p>
+              <a class="para blog__read-more">Read More</a>
+            </div>
+            <div class="blog__social-medium">
+              <h2 class="heading heading--small">Recent Posts</h2>
+              <article>
+                <span class="date para">December 06, 2018</span>
+                <p class="para">Deleniti facere et ullam necessitatibus molestiae minima</p>
+              </article>
+              <article>
+                <span class="date para">December 01, 2018</span>
+                <p class="para">Qui, ipsum odio eum iusto cum, excepturi obcaecati mollitia velit</p>
+              </article>
+              <article>
+                <span class="date para">November 26, 2018</span>
+                <p class="para">Nihil error aliquid quasi unde voluptatibus labore fugit laborum</p>
+              </article>
+            </div>
+            <div class="blog__social-medium">
+              <h2 class="heading heading--small">Our Twitter</h2>
+              <article>
+                <p class="para"><span class="blue">@waxom</span> nihil est reiciendis iusto eveniet earum</p>
+                <span class="date para">3 mins ago</span>
+              </article>
+              <article>
+                <p class="para">Expedita molestias <span class="blue">#envato</span> harum nulla assumenda, ea neque quia iste</p>
+                <span class="date para">5 hours ago</span>
+              </article>
+              <article>
+                <p class="para">eiciendis iusto eveniet earum repellendus, sit fugit hic</p>
+                <span class="date para">20 days ago</span>
+              </article>
+            </div>
+            <div class="blog__social-medium">
+              <h2 class="heading heading--small">Dribbble Widget</h2>
+              <div class=" blog__gallery flex-list">
+                <img src="img/gallery-small1.jpg" alt="smartphones">
+                <img src="img/gallery-small2.jpg" alt="bag">
+                <img src="img/gallery-small3.jpg" alt="book">
+                <img src="img/gallery-small4.jpg" alt="widgets">
+              </div>
+            </div>
+          </div>
+          <div class="credits container padding-responsive--top">
+            <p class="para">
+              Icons made by
+              <a target="_blank" href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a>,
+              <a target="_blank" href="https://www.freepik.com/" title="Freepik">Freepik</a>,
+              <a target="_blank" href="https://www.flaticon.com/authors/tutsplus" title="TutsPlus">TutsPlus</a>,
+              <a target="_blank" href="https://www.flaticon.com/authors/simpleicon" title="SimpleIcon">SimpleIcon</a>,
+              <a target="_blank" href="https://www.flaticon.com/authors/elegant-themes" title="Elegant Themes">Elegant Themes</a>,
+              <a target="_blank" href="https://www.flaticon.com/authors/situ-herrera" title="Situ Herrera">Situ Herrera</a>,
+              <a target="_blank" href="https://www.flaticon.com/authors/vectors-market" title="Vectors Market">Vectors Market</a>,
+              <a target="_blank" href="https://www.flaticon.com/authors/itim2101" title="itim2101">itim2101</a>
+              from
+              <a href="https://www.flaticon.com/" title="Flaticon" target="_blank">www.flaticon.com</a>
+              is licensed by
+              <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+            </p>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer__wrapper container padding-responsive--y">
+          <div class="footer__item">
+            <p class="para">Copyright &copy; 2015 <span class="white">Waxom</span></p>
+            <p class="para">Privacy policy</p>
+            <p class="para"><span class="brown3">FAQ</span></p>
+            <p class="para">Support</p>
+          </div>
+          <div class="footer__item">
+            <p class="para">Designed by <span class="white">ThemeFire</span></p>
+            <p class="para">Coded as excercises by <span class="white">Jakub Woźny</span></p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="glide__bullet--active dark-bg hidden" style="display: none;"></div>
+  <script type="text/javascript" src="app.js"></script></body>
+</html>
