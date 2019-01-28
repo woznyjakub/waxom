@@ -1,4 +1,4 @@
-.project__categories {
+.projects__categories {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -67,15 +67,16 @@
 }
 @media ($bp-landscape) {
   .projects__list {
-    justify-content: space-between;
+    justify-content: center;
   }
   .projects__project {
-    flex-basis: 49%;
+    flex-basis: calc(100% / 2 - 0.5rem);
+    margin: 0.25rem;
   }
 }
 @media ($bp-tablet) {
   .projects__project {
-    flex-basis: 33%;
+    flex-basis: calc(100% / 3 - 0.5rem);
   }
 }
 @media ($bp-desktop-small) {
@@ -94,7 +95,8 @@
 }
 @media ($bp-desktop-large) {
   .projects__project {
-    margin: 1rem 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
   .projects__project-text-wrapper {
     padding: 2rem;

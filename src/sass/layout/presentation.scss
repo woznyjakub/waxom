@@ -12,7 +12,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  background: url("../img/desk.jpg") 50% 50% / cover;
+  background: 50% 50% / cover;
   transition: top 0.6s ease-in-out;
   &,
   .container {
@@ -45,11 +45,22 @@
 }
 .presentation__bg-container {
   background-image: $brown-gradient;
+  transform: scaleY(0);
+  transition: transform 1.5s $scale-y-timing-function;
+  transform-origin: top;
+  &.visible {
+    transform: scaleY(1);
+    .presentation__counters {
+      opacity: 1;
+    }
+  }
 }
 .presentation__counters {
   display: flex;
   flex-wrap: wrap;
   @include create-centered-container(1024px);
+  opacity: 0;
+  transition: opacity 0.3s 1.4s ease-in;
 }
 .presentation__counter {
   flex-basis: 100%;
@@ -89,9 +100,17 @@
     flex-basis: 50%;
   }
 }
+@media (max-width: 899px) {
+  .presentation__intro {
+    background-image: url("../img/desk-mobile.jpg");
+  }
+}
 @media ($bp-desktop-small) {
-  .presentation__intro svg:hover .ring {
-    transform: rotate(90deg);
+  .presentation__intro {
+    background-image: url("../img/desk.jpg");
+    svg:hover .ring {
+      transform: rotate(90deg);
+    }
   }
   .presentation__mobile {
     display: block;

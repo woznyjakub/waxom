@@ -13,12 +13,35 @@ img {
 a {
   text-decoration: none;
 }
+button:focus {
+  outline: none;
+}
 .main-container {
   max-width: 1920px;
   margin: 0 auto;
   overflow-x: hidden;
 }
-
+body {
+  background-color: $white;
+  &::-webkit-scrollbar {
+    width: 16px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: #aaa;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(
+      90deg,
+      transparent 0px,
+      transparent 4px,
+      $white 4px,
+      $white 12px,
+      transparent 12px,
+      transparent 16px
+    );
+    border-radius: 8px;
+  }
+}
 @import "./layout/header";
 @import "./layout/nav";
 @import "./layout/about";

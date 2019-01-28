@@ -1,5 +1,5 @@
 .nav {
-  padding: 0.5rem 0;
+  padding: 0.5rem;
   position: fixed;
   left: 0;
   top: 0;
@@ -14,14 +14,14 @@
   justify-content: flex-end;
   align-items: center;
   @include create-centered-container(1366px);
-  min-height: 3.5rem;
 }
 .nav__logo {
   position: absolute;
   left: 1rem;
-  top: 0;
+  top: -0.25rem;
   max-height: 8rem;
   transition: 0.3s 0.7s;
+  max-width: 112px;
   &--dark {
     opacity: 0;
   }
@@ -118,7 +118,16 @@
     opacity: 0;
   }
 }
+@media ($bp-tablet) {
+  .nav {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+}
 @media ($bp-desktop-small) {
+  .nav__logo {
+    top: 0;
+  }
   .nav__list {
     display: inline-flex;
     width: auto;

@@ -2,7 +2,7 @@
   position: relative;
 }
 .header__slide {
-  min-height: 100vh;
+  min-height: 600px;
   background: 50% 50% / cover;
   display: flex;
   flex-direction: column;
@@ -13,19 +13,6 @@
   & > * {
     color: $white;
   }
-}
-// It's caused by clones elements created by glidejs slider library
-.header__slide[data-id="1"] {
-  background-image: url("../img/mountain.jpg");
-}
-.header__slide[data-id="2"] {
-  background-image: url("../img/city.jpg");
-}
-.header__slide[data-id="3"] {
-  background-image: url("../img/car.jpg");
-}
-.header__slide[data-id="4"] {
-  background-image: url("../img/camera.jpg");
 }
 
 .header__heading-small {
@@ -41,6 +28,8 @@
   line-height: 1em;
 }
 .header__para {
+  font-size: 14px;
+  padding: 0;
   font-weight: 700;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -51,7 +40,16 @@
 .header__arrow {
   display: none;
 }
+@media ($bp-landscape) {
+  .header__slide {
+    min-height: 420px;
+  }
+}
 @media ($bp-tablet) {
+  .header__slide {
+    min-height: 720px;
+  }
+
   .header__heading-small {
     font-size: 2.25em;
   }
@@ -59,7 +57,36 @@
     font-size: 3em;
   }
 }
+@media (max-width: 899px) {
+  .header__slide[data-id="1"] {
+    background-image: url("../img/mountain-mobile.jpg");
+  }
+  .header__slide[data-id="2"] {
+    background-image: url("../img/city-mobile.jpg");
+  }
+  .header__slide[data-id="3"] {
+    background-image: url("../img/car-mobile.jpg");
+  }
+  .header__slide[data-id="4"] {
+    background-image: url("../img/camera-mobile.jpg");
+  }
+}
 @media ($bp-desktop-small) {
+  .header__slide {
+    cursor: grab;
+  }
+  .header__slide[data-id="1"] {
+    background-image: url("../img/mountain.jpg");
+  }
+  .header__slide[data-id="2"] {
+    background-image: url("../img/city.jpg");
+  }
+  .header__slide[data-id="3"] {
+    background-image: url("../img/car.jpg");
+  }
+  .header__slide[data-id="4"] {
+    background-image: url("../img/camera.jpg");
+  }
   .header__btn-start:hover {
     background-color: $white;
     color: $brown1;
@@ -155,5 +182,10 @@
     &::after {
       transform: translateY(-50%) rotate(-60deg);
     }
+  }
+}
+@media ($bp-super-large) {
+  .header__slide {
+    min-height: 100vh;
   }
 }

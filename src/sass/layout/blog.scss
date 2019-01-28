@@ -83,7 +83,7 @@
   }
 }
 .blog__partners-wrapper {
-  background: url("../img/mountain2.jpg") 50% 50% / cover;
+  background: 50% 50% / cover;
 }
 .blog__partners {
   justify-content: space-between;
@@ -187,6 +187,11 @@
     }
   }
 }
+@media (max-width: 899px) {
+  .blog__partners-wrapper {
+    background-image: url("../img/mountain2-mobile.jpg");
+  }
+}
 @media ($bp-desktop-small) {
   .blog__slide-text-wrapper {
     p.para {
@@ -194,6 +199,7 @@
     }
   }
   .blog__slide {
+    cursor: grab;
     &,
     .day,
     .month {
@@ -231,6 +237,9 @@
     .glide__arrows {
       margin-top: 1.5rem;
     }
+  }
+  .blog__partners-wrapper {
+    background-image: url("../img/mountain2.jpg");
   }
   .blog__social-medium article:hover {
     .date {
